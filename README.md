@@ -3,18 +3,24 @@ A simple tic-tac-toe in Phaser.
 
 It was developed in Typescript, using npm for dependency management and gulp for building.
 
-#Directories
-*html
-Contains the static files used in the project.
+## Directories
 
-*lib
-Contains the Typescript description files for Phaser. Courtesy of mattherman/phaser-typescript-template.
+* html
 
-*node_modules
+Contains the static files used in the project. It's whole contents are copied to output during build.
+
+* lib
+
+Contains the Typescript description files for Phaser. Courtesy of [mattherman/phaser-typescript-template](https://github.com/mattherman/phaser-typescript-template).
+
+* node_modules
+
 All the node modules used. I should'n've uploaded this.
 
-*output
+* output
+
 The output of the build procedure. To run the game, create a http server based on this directory and open index.html in a browser.
 
-*src
+* src
+
 The source to the game.
