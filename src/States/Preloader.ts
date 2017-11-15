@@ -1,6 +1,6 @@
 type KeyUrlPair = { key: string, url: string };
 
-module MyGame {
+module TicTacToe {
 
 	export class Preloader extends Phaser.State {
 

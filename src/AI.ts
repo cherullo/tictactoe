@@ -1,4 +1,4 @@
-module MyGame
+module TicTacToe
 {
     type Strategy = (board: Board, me: EPlayer) => EHouse;
 

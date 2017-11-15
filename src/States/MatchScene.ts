@@ -1,6 +1,6 @@
 // import { Sprite } from "phaser-ce";
 
-module MyGame {
+module TicTacToe {
 
 	export class MatchScene extends Phaser.State {
 		

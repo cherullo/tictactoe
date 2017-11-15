@@ -1,4 +1,4 @@
-module MyGame {
+module TicTacToe {
     
         export class Board 
         {
