@@ -56,12 +56,13 @@ module TicTacToe {
 
 		private _OnClick(target: Phaser.Sprite, pointer: Phaser.Pointer, clickedHouse: EHouse): void
 		{
-			this._Play(EPlayer.Player1, clickedHouse);
-
-			this._Play(EPlayer.Player2, this._AI.Play());
+			if (this._Play(EPlayer.Player1, clickedHouse) == false)
+			{
+				this._Play(EPlayer.Player2, this._AI.Play());
+			}
 		}
 
-		private _Play(player: EPlayer, house: EHouse)
+		private _Play(player: EPlayer, house: EHouse): boolean
 		{
 			this._match.FeedMove(player, house);				
 			
@@ -71,8 +72,10 @@ module TicTacToe {
 			if (this._match.IsDone() == true)
 			{
 				this._EndMatch();
-				return;
+				return true;
 			}
+
+			return false;
 		}
 
 		private _GetSpriteKey(player: EPlayer): string

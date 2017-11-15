@@ -69,9 +69,9 @@ module TicTacToe {
 			switch(result)
 			{
 				case EPlayer.Player1:
-					return "Player 1 Wins!";
+					return "You won!";
 				case EPlayer.Player2:
-					return "Player 2 Wins!";
+					return "The computer won!";
 				case EPlayer.None:
 					return "It's a tie!";
 			}
